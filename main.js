@@ -35,7 +35,7 @@ const comentario = prompt("Cuentenos en que le podemos ayudar: ");
 datos = prompt("Para enviar el formulario escriba 0")
 
 function nombreCompleto (){
-    return "Nombre completo: "+  nombre + " " + apellido + "                                                               " + "Correo: " +  correo + "                                                                               " + "Telefono: " +  telefono + "                                                                       " + "Comentario adicional: " + comentario ; 
+    return "En los proximos minutos un integrante de nuestro equipo se comunicara con usted y le enviaremos un correo" + "                   " + "Nombre completo: "+  nombre + " " + apellido + " " + "Correo: " +  correo + " " + "Telefono: " +  telefono + " " + "Comentario adicional: " + comentario ; 
 }
 alert(nombreCompleto());
 
