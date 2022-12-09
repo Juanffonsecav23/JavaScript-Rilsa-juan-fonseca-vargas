@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Rilsa , gps , rastreo , satelital , localizacion"><!-- palabras clave para los motores de busqueda -->
+    <meta name="description" content="En rilsa nos enfocamos en prestar un servicio de geolocalizacion para vehiculos con tecnologia de punta"><!-- descripcion del sitio web -->
+    <link rel="stylesheet" href="estilos.css"><!--link con hoja de estilo-->
+    <link rel="shortcut icon" href="Imagenes/rilsa_favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Imagenes/rilsa_favicon.ico" type="image/x-icon"> <!-- favicon empresarial-->
+    <title>Rilsa S.A.S</title>
+    <body>
+        <header><!--encabezado-->
+            <nav><!--menu-->
+            <div class="main__img__logobg">
+                <img src="imagenes/rilsa sas logo.png" alt="logo de rilsa" class="main__logo">
+            </div>
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                <div class="menuh container-fluid-adpt">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-justified">
+                    <li class="nav-item anima">
+                        <a class="nav-link" >Inicio</a>
+                    </li><!--  -->
+                    <li class="nav-item anima">
+                        <a class="nav-link" >Quienes Somos</a>
+                    </li>
+                    <li class="nav-item anima">
+                        <a class="nav-link" >Productos</a>
+                    </li>
+                    <li class="nav-item anima">
+                        <a class="nav-link" >Servicios</a>
+                    </li>
+                    <li class="nav-item anima">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link anima" href="https://gpspace.app/rilsa/LoginThree.aspx">Ingresa</a><!-- link a la plataforma de ingreso -->
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+
+        <main><!--area principal-->   
+            <h1 class="h5-c1"> ¿Estas interesado en nuestros servicios?</h1>
+            <h2 class="h5-c2">Dejanos tus datos y nosotros te contactamos</h2>
+            <form>
+            <section>
+                <div class="form__box">
+                    <div class="form">
+                        <label for="nombre"></label><!-- caja para poner nombre del usuario -->
+                        <input type="text" name ="nombre"placeholder="Nombre:" class="data__box">
+                    </div>
+                    <div class="form">
+                        <label for="apellido"></label><!-- caja paraponer apellido del usuario -->
+                        <input type="text" name="apellido" placeholder="Apellido:" class="data__box">
+                    </div>
+                    <div class="form">
+                        <label for="correo"></label><!-- caja para poner correo del usuario -->
+                        <input type="email" name="correo" placeholder="Correo:" class="data__box">
+                    </div>
+                    <div class="form">
+                        <label for="celular"></label><!--  caja para poner el telefono celular del usuario -->
+                        <input type="tel" name="celular" placeholder="Numero de Celular:" class="data__box">
+                    </div>
+                    <div class="form"><!-- opciones de equipos -->
+                        <select name="equipo" class="opc">
+                            <option value="">Equipo</option>
+                            <option value="CR300">Cellocator CR300</option>
+                            <option value="310U">Meitrack_T366</option>
+                            <option value="310U">Suntech_310U</option>
+                            <option value="310U">teltonika-FMC130</option>
+                        </select>
+                    </div>
+                    <div>
+                        <!--caja de texto multilinea-->
+                        <label for="comentarios"></label><br> 
+                        <textarea name="comentarios" cols="30" rows="10" placeholder="En que te podemos ayudar:" class="box__txt"></textarea>
+                    </div>
+                    <section>
+                        <div class="form"> 
+                            <p class="acp__terms acp__terms:hover">Acepta terminos y condiciones</p>
+                            <input type="checkbox" name="acepta" value="1" />
+                        </div>
+                    </section>
+                    <section>
+                        <div class="form">
+                            <input type="submit" value="Enviar formulario" class="botones sub_reset">
+                            <input type="reset" value="Limpiar formulario" class="botones sub_reset">
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <h2 class="center">Dirección </h2> <!-- direccion de contacto de la empresa -->
+            <iframe class="center2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8139025220353!2d-74.0830445!3d4.627267000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bd600d68593%3A0xee4fa6d88aa7b214!2sCra.%2031a%20%2325A-93%2C%20Teusaquillo%2C%20Bogot%C3%A1!5e0!3m2!1sen!2sco!4v1657586628273!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </main>
+    <!-- footer -->
+    <div>
+        <footer class="pd-ft my-ft">
+        <p class="text-center text-muted border-bottom">© 2022 Code by Juan Felipe Fonseca Vargas</p>
+        <ul class="nav justify-content-center pb-3 mb-3">
+        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+        <li class="nav-item"><a href="nosotros.html" class="nav-link px-2 text-muted">Nosotros</a></li>
+        <li class="nav-item"><a href="productos.html" class="nav-link px-2 text-muted">Productos</a></li>
+        <li class="nav-item"><a href="servicios.html" class="nav-link px-2 text-muted">Servicios</a></li>
+        <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+        <li class="nav-item"><a href="https://gpspace.app/rilsa/LoginThree.aspx" class="nav-link px-2 text-muted">Ingresa</a></li><!-- link a la plataforma de ingreso -->
+        </ul>
+        </footer>
+    </div>
+    <script src="main.js"></script><!-- link con java -->
+    </body>
+</html>
