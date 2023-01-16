@@ -52,50 +52,50 @@
         <main><!--area principal-->   
             <h1 class="h5-c1"> ¿Estas interesado en nuestros servicios?</h1>
             <h2 class="h5-c2">Dejanos tus datos y nosotros te contactamos</h2>
-            <form>
+            <form id="formContacto"><!-- formulario -->
             <section>
                 <div class="form__box">
                     <div class="form">
                         <label for="nombre"></label><!-- caja para poner nombre del usuario -->
-                        <input type="text" name ="nombre"placeholder="Nombre:" class="data__box">
+                        <input type="text" name ="nombre"placeholder="Nombre:" class="data__box" id="nombre">
                     </div>
                     <div class="form">
                         <label for="apellido"></label><!-- caja paraponer apellido del usuario -->
-                        <input type="text" name="apellido" placeholder="Apellido:" class="data__box">
+                        <input type="text" name="apellido" placeholder="Apellido:" class="data__box" id="apellido">
                     </div>
                     <div class="form">
                         <label for="correo"></label><!-- caja para poner correo del usuario -->
-                        <input type="email" name="correo" placeholder="Correo:" class="data__box">
+                        <input type="email" name="correo" placeholder="Correo:" class="data__box" id="correo" >
                     </div>
                     <div class="form">
                         <label for="celular"></label><!--  caja para poner el telefono celular del usuario -->
-                        <input type="tel" name="celular" placeholder="Numero de Celular:" class="data__box">
+                        <input type="tel" name="celular" placeholder="Numero de Celular:" class="data__box" id="celular">
                     </div>
                     <div class="form"><!-- opciones de equipos -->
-                        <select name="equipo" class="opc">
+                        <select name="equipo" class="opc" id="opciones">
                             <option value="">Equipo</option>
-                            <option value="CR300">Cellocator CR300</option>
-                            <option value="310U">Meitrack_T366</option>
-                            <option value="310U">Suntech_310U</option>
-                            <option value="310U">teltonika-FMC130</option>
+                            <option value="Cellocator CR300">Cellocator CR300</option>
+                            <option value="Meitrack-T366">Meitrack-T366</option>
+                            <option value="Suntech-310U">Suntech-310U</option>
+                            <option value="Teltonika-FMC130">Teltonika-FMC130</option>
                         </select>
                     </div>
                     <div>
                         <!--caja de texto multilinea-->
                         <label for="comentarios"></label><br> 
-                        <textarea name="comentarios" cols="30" rows="10" placeholder="En que te podemos ayudar:" class="box__txt"></textarea>
+                        <textarea name="comentarios" cols="30" rows="10" placeholder="En que te podemos ayudar:" class="box__txt" id="coments"></textarea>
                     </div>
                     <section>
                         <div class="form"> 
-                            <p class="acp__terms acp__terms:hover">Acepta terminos y condiciones</p>
+                            <p class="acp__terms acp__terms:hover">Recordar datos</p>
                             <input type="checkbox" name="acepta" value="1" />
                         </div>
                     </section>
                     <section>
                         <div class="form">
                             <input type="submit" value="Enviar formulario" class="botones sub_reset">
-                            <input type="reset" value="Limpiar formulario" class="botones sub_reset">
-                        </div>
+<!--                             <input type="reset" value="Limpiar formulario" class="botones sub_reset">
+-->                        </div>
                     </section>
                 </div>
             </section>
