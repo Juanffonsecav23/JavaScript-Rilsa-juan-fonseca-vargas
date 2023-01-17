@@ -292,7 +292,7 @@
     width: 300px;
     height: 1.2rem;
     color: #1466CC;
-    border: solid #ededed;
+    /* border: solid #ededed; */
     border-radius: 10px;
   }
   .form { /*formularios*/
@@ -680,7 +680,7 @@
     width: 300px;
     height: 30px;
     color: #1466CC;
-    border: solid #ededed;
+    /* border: solid #ededed; */
     border-radius: 10px;
   }
   .form { /*formularios*/
@@ -1055,11 +1055,13 @@
     background-color: rgba(211, 235, 243, 0.925);
   }
   .data__box { /*cajas de datos cliente*/
-    width: 300px;
+    width: 600px;
     height: 30px;
     color: #1466CC;
-    border: solid #ededed;
-    border-radius: 10px;
+    border:none;
+    border-bottom: solid red;
+    /* border-radius: 10px; */
+    background-color: rgba(211, 235, 243, 0.925);
   }
   .form { /* flexbox de formularios*/
     display: flex;
