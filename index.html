@@ -55,48 +55,45 @@
             <form id="formContacto"><!-- formulario -->
             <section>
                 <div class="form__box">
-                    <p>Nombre:</p>
+                    <p class="p__form">Nombre</p>
                     <div class="form">
                         <label for="nombre"></label><!-- caja para poner nombre del usuario -->
-                        <input type="text" name ="nombre" placeholder="Nombre:" class="data__box" id="nombre">
+                        <input type="text" name ="nombre" class="data__box" id="nombre">
                     </div>
+                    <p class="p__form">Apellido</p>
                     <div class="form">
                         <label for="apellido"></label><!-- caja paraponer apellido del usuario -->
-                        <input type="text" name="apellido" placeholder="Apellido:" class="data__box" id="apellido">
+                        <input type="text" name="apellido" class="data__box" id="apellido">
                     </div>
+                    <p class="p__form">Correo</p>
                     <div class="form">
                         <label for="correo"></label><!-- caja para poner correo del usuario -->
-                        <input type="email" name="correo" placeholder="Correo:" class="data__box" id="correo" >
+                        <input type="email" name="correo" class="data__box" id="correo" >
                     </div>
+                    <p class="p__form">Numero celular</p>
                     <div class="form">
                         <label for="celular"></label><!--  caja para poner el telefono celular del usuario -->
-                        <input type="tel" name="celular" placeholder="Numero de Celular:" class="data__box" id="celular">
+                        <input type="tel" name="celular" class="data__box" id="celular">
                     </div>
                     <div class="form"><!-- opciones de equipos -->
                         <select name="equipo" class="opc" id="opciones">
                             <option value="">Equipo</option>
-                            <option value="Cellocator CR300">Cellocator CR300</option>
+                            <!-- <option value="Cellocator CR300">Cellocator CR300</option>
                             <option value="Meitrack-T366">Meitrack-T366</option>
                             <option value="Suntech-310U">Suntech-310U</option>
-                            <option value="Teltonika-FMC130">Teltonika-FMC130</option>
+                            <option value="Teltonika-FMC130">Teltonika-FMC130</option> -->
                         </select>
                     </div>
+                    <p class="p__form">En que te podemos ayudar</p>
                     <div>
                         <!--caja de texto multilinea-->
                         <label for="comentarios"></label><br> 
-                        <textarea name="comentarios" cols="30" rows="10" placeholder="En que te podemos ayudar:" class="box__txt" id="coments"></textarea>
+                        <textarea name="comentarios" cols="30" rows="10" class="box__txt" id="coments"></textarea>
                     </div>
-                    <section>
-                        <div class="form"> 
-                            <p class="acp__terms acp__terms:hover">Recordar datos</p>
-                            <input type="checkbox" name="acepta" value="1" />
-                        </div>
-                    </section>
                     <section>
                         <div class="form">
                             <input type="submit" value="Enviar formulario" class="botones sub_reset">
-<!--                             <input type="reset" value="Limpiar formulario" class="botones sub_reset">
--->                        </div>
+                        </div>
                     </section>
                 </div>
             </section>

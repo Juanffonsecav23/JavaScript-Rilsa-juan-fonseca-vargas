@@ -7,6 +7,7 @@ const email = document.getElementById('correo');
 const celular = document.getElementById('celular');
 const opciones = document.getElementById('opciones');
 const coments = document.getElementById('coments')
+const equipos = ['Cellocator CR300','Meitrack-T366','Suntech-310U','Teltonika-FMC130']
 let datos;
 
 
@@ -46,3 +47,12 @@ console.log(`Nombre: ${newData.nombre} Apellido: ${newData.apellido} Correo: ${n
 dataSave(newData);
 guardarDatos(newData);
 })
+
+//Opciones de equipos 
+
+equipos.forEach((equipo)=>{
+    let opcion = document.createElement("option");
+    opcion.value = equipo;
+    opcion.innerText = equipo;
+    opciones.appendChild(opcion);
+});

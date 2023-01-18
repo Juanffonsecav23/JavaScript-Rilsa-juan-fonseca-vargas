@@ -4,6 +4,7 @@
 /******* MOBILE *******/
 @import url("https://fonts.googleapis.com/css2?family=Kotta+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+
 @media only screen and (max-width: 480px) {
   /* carrousel */
   .caja__carousel {
@@ -267,41 +268,50 @@
     margin-top: 5%;
   }
   .box__txt { /*caja de texto*/
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
     width: 70%;
     margin-top: 20px;
-    margin-left: 17%;
+    margin-left: 15%;
     color: #1466CC;
     border: solid #ededed;
   }
   .h5-c1 {
+    font-size: 1.2rem;
     width: 100%;
+    color: #000;
   }
   .h5-c2 {
-    width: 100%;
+    font-size: 1.2rem;
+    width: 90%;
+    margin-left: 20px;
+    color: #000;
   }
   .form__box { /*caja formulario*/
     margin: 5px;
     border: solid 10px #1259B3;
     border-radius: 10px;
-    background-color: rgba(173, 216, 230, 0.925);
+    background-color: #d9ddfffa;
+    border: solid #a0b3baec;
   }
   .data__box { /*cajas de datos cliente*/
-    width: 300px;
-    height: 1.2rem;
-    color: #1466CC;
-    /* border: solid #ededed; */
-    border-radius: 10px;
+    width: 280px;
+    height: 30px;
+    color: #000;
+    border: none;
+    background-color: #d9ddfffa;
+    border-bottom: solid #a0b3baec;
+    margin-left: 10px;
+  }
+  .p__form{
+    color: #1259B3;
+    font-size: 1.2rem;
+    width: 235px;
+    margin-top: 20px;
+    margin-left: 43px;
   }
   .form { /*formularios*/
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    margin-left: 40px;
-    margin-right: 30px;
-    margin-top: 20px;
   }
   .opc { /*opciones*/
     color: #1466CC;
@@ -309,6 +319,7 @@
     border-radius: 20px;
     width: 120px;
     background-color: white;
+    margin-top: 10px;
   }
   .center { /* propiedad para centrar el titulo de direccion */
     margin-left: 20%;
@@ -655,39 +666,51 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    margin-left: 20%;
-    margin-right: 30%;
+    margin-left: 17%;
+    margin-right: 10%;
     margin-top: 20px;
     color: #1466CC;
     border: solid #ededed;
     border-radius: 10px;
   }
   .h5-c1 {
+    font-size: 2rem;
     width: 90%;
     margin-left: 10%;
+    color: #000;
   }
   .h5-c2 {
-    width: 97%;
-    margin-left: 2%;
+    font-size: 2rem;
+    width: 90%;
+    margin-left: 7%;
+    color: #000;
   }
   .form__box { /*caja formulario*/
     margin: 5px 20%;
-    border: solid 10px #1259B3;
     border-radius: 10px;
-    background-color: rgba(173, 216, 230, 0.925);
+    background-color: #d9ddfffa;
+    border: solid #a0b3baec;
   }
   .data__box { /*cajas de datos cliente*/
-    width: 300px;
+    width: 500px;
     height: 30px;
-    color: #1466CC;
-    /* border: solid #ededed; */
-    border-radius: 10px;
+    color: black;
+    border:none;
+    background-color: #d9ddfffa;
+    border-bottom: solid #a0b3baec;
+    margin-right: 10px;
+  }
+  .p__form{
+    color: #1259B3;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-left: 20px;
   }
   .form { /*formularios*/
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 20px;
   }
   .opc { /*opciones*/
@@ -1033,49 +1056,59 @@
     margin-left: 35%;
   }
   .box__txt { /* flexbox de caja de texto*/
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    margin-left: 35%;
-    margin-right: 30%;
-    margin-top: 20px;
-    color: #1466CC;
-    border: solid #ededed;
+    width: 400px;
+    height: 300px ;
+    margin-left: 25%;
+    margin-right: 20%;
+    color: black;
+    border: solid #a0b3baec;
   }
   .h5-c1 {
     margin-left: 20%;
+    color: #000;
   }
   .h5-c2 {
     margin-left: 17%;
+    color: #000;
   }
   .form__box { /*caja formulario*/
     margin: 5px 20%;
-    border: solid 10px #1259B3;
+    padding: 1%;
     border-radius: 10px;
-    background-color: rgba(211, 235, 243, 0.925);
+    background-color: #d9ddfffa;
+    border: solid #a0b3baec;
   }
   .data__box { /*cajas de datos cliente*/
     width: 600px;
     height: 30px;
-    color: #1466CC;
+    color: black;
     border:none;
-    border-bottom: solid red;
-    /* border-radius: 10px; */
-    background-color: rgba(211, 235, 243, 0.925);
+    background-color: #d9ddfffa;
+    border-bottom: solid #a0b3baec;
+    margin-right: 5rem;
+    margin-top: 5px;
+  }
+  .p__form{
+    color: #1259B3;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-left: 100px;
   }
   .form { /* flexbox de formularios*/
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     margin-left: 40px;
-    margin-top: 20px;
   }
   .opc { /*opciones*/
-    color: #1466CC;
-    border: solid #ededed;
+    color: black;
+    border: solid #a0b3baec;
     border-radius: 20px;
-    width: 120px;
+    width: 160px;
+    height: 30px;
     background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .center {
     margin-left: 43%;
@@ -1090,9 +1123,9 @@ span:hover {
 }
 
 .botones {
-  background-image: linear-gradient(lightblue, rgb(150, 150, 255));
-  color: black;
-  border: solid #ededed;
+  background-image: linear-gradient(lightgreen, rgb(18, 176, 49));
+  color: white;
+  border: solid lightgreen;
   border-radius: 20px;
   margin: 10px;
   padding: 5px;
@@ -1348,7 +1381,7 @@ hr {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+/*   margin-bottom: 1rem; */
 }
 
 abbr[title] {
