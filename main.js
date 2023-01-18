@@ -26,12 +26,6 @@ class Datos {
     }
 }
 
-//Guardado de datos
-
-function dataSave(data) {
-    return datos.push(data)
-}
-
 //Guardar en SS
 
 function guardarDatos(array) {
@@ -44,7 +38,6 @@ formContacto.addEventListener('submit', (submit)=>{
 submit.preventDefault();
 const newData = new Datos (nombre.value, apellido.value, email.value, celular.value);
 console.log(`Nombre: ${newData.nombre} Apellido: ${newData.apellido} Correo: ${newData.email} Celular: ${newData.celular} Equipo seleccionado: ${opciones.value} Comentario adicional: ${coments.value} `); 
-dataSave(newData);
 guardarDatos(newData);
 })
 
