@@ -1,4 +1,4 @@
-// TERCERA ENTREGA DEL PROYECTO FINAL
+// PROYECTO FINAL
 
 const formContacto = document.getElementById('formContacto');
 const nombre = document.getElementById('nombre');

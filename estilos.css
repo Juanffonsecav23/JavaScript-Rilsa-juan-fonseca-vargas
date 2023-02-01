@@ -326,7 +326,7 @@
     margin-right: 0;
   }
   .center2 { /* propiedad para centrar el iframe */
-    margin-left: 7%;
+    margin-left: 8%;
     width: 20rem;
     height: 20rem;
   }
@@ -1267,6 +1267,7 @@ body { /*estilo del cuerpo*/
 }
 
 .pd-ft {
+  margin-top: 50px;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
