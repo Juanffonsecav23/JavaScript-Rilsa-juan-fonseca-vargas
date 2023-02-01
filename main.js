@@ -7,7 +7,6 @@ const email = document.getElementById('correo');
 const celular = document.getElementById('celular');
 const opciones = document.getElementById('opciones');
 const coments = document.getElementById('coments')
-const equipos = ['Cellocator CR300','Meitrack-T366','Suntech-310U','Teltonika-FMC130']
 let datos;
 
 
@@ -37,15 +36,25 @@ function guardarDatos(array) {
 formContacto.addEventListener('submit', (submit)=>{
 submit.preventDefault();
 const newData = new Datos (nombre.value, apellido.value, email.value, celular.value);
-console.log(`Nombre: ${newData.nombre} Apellido: ${newData.apellido} Correo: ${newData.email} Celular: ${newData.celular} Equipo seleccionado: ${opciones.value} Comentario adicional: ${coments.value} `); 
-guardarDatos(newData);
+Swal.fire({
+    icon: 'success',
+    iconColor:'ligthgreen',
+    title: 'Tus datos se enviaron con exito',
+    confirmButtonColor:'green'
+})
+guardarDatos(newData); 
+
 })
 
 //Opciones de equipos 
 
-equipos.forEach((equipo)=>{
-    let opcion = document.createElement("option");
-    opcion.value = equipo;
-    opcion.innerText = equipo;
-    opciones.appendChild(opcion);
-});
+fetch('./json/equipos.json')
+.then((response)=> response.json())
+.then((data)=>{
+    data.forEach((equipo)=>{
+        let opcion = document.createElement("option");
+        opcion.value = equipo;
+        opcion.innerText = equipo;
+        opciones.appendChild(opcion);
+    })
+})
